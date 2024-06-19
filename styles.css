@@ -27,7 +27,7 @@ body {
 .logo {
     font-size: 18px;
     font-weight: 700;
-    margin-top: 5px;
+    margin-top: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,14 +52,11 @@ h1 {
 }
 
 .form-container {
-
     margin-top: 20px;
 }
 
 .tabs {
     display: flex;
-    justify-content: center;
-    align-items: center;
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 20px;
 }
@@ -86,6 +83,8 @@ h1 {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 20px;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .input-group img {
@@ -106,12 +105,11 @@ h1 {
 }
 
 .continue-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
+    display: block;
+    margin: 20px auto 0 auto;  /* Added margin-top to create gap */
+    text-align: center;
+    width: 50%;
     padding: 10px;
-    margin: 0;   
     background-color: #007bff;
     color: white;
     border: none;
@@ -126,15 +124,23 @@ h1 {
 }
 
 .or-continue {
-    
     text-align: center;
     color: #777777;
     margin: 20px 0 10px 0;
 }
-.or-continue .span {
+
+.or-continue {
     display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.or-continue .line {
+    flex: 1;
     height: 1px;
     width: 1px;
+    background-color: #777777;
 }
 
 .social-buttons {
@@ -154,36 +160,33 @@ h1 {
     align-items: center;
     cursor: pointer;
     font-size: 20px;
+    gap: 15px;
 }
 
 .social-btn.google {
-    
     color: white;
 }
 
 .social-btn.apple {
-    
     color: white;
 }
 
 .social-btn.facebook {
-    
     color: white;
 }
 
 .footer-text {
     color: #777777;
     font-size: 12px;
-    margin-top: 25px;
+    margin-top: 80px;
     line-height: 1.5;
 }
 
 .image-section {
-   flex: 1;
-   
+    flex: 1;
 }
 
-.image-section img {
+.image-section {
     width: 100%;
     height: 100%;
     object-fit: cover;

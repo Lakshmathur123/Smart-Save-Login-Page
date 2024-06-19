@@ -10,32 +10,50 @@
 <body>
     <div class="container">
         <div class="login-section">
-            <div class="logo"><img src="./images/horse-galloping-black-silhouette-facing-left.png" alt="horse" width="20" height="20" gap="5">SmartSave</div>
+            <div class="logo"> <img src="./images/horse-galloping-black-silhouette-facing-left.png" alt="image-section" height="20px" width="20px">
+                SmartSave</div>
             <h1>Welcome Back</h1>
             <p class="subtitle">Welcome Back, Please enter Your details</p>
             <div class="form-container">
                 <div class="tabs">
-                    <button class="tab active">Sign In</button>
-                    <button class="tab">Signup</button>
+                    <button class="tab active" id="signInTab">Sign In</button>
+                    <button class="tab" id="signUpTab">Sign Up</button>
                 </div>
-                <form>
+                <form id="signInForm">
                     <div class="input-group">
-                        <label for="email">
-                            <img src="./images/2hzxfTE3WS68Om76pOlY05VTZkQ.svg" alt="email icon">
+                        <label for="signInEmail">
+                            <img src="./images/email.png" alt="email icon">
                         </label>
-                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        <input type="email" id="signInEmail" name="email" placeholder="Email Address" required>
                         <span class="checkmark">&#10003;</span>
                     </div>
                     <button type="submit" class="continue-btn">Continue</button>
                 </form>
-               <div class="or-continue">
-                <span></span> Or Continue With
-            <span></span>
-        </div>
+                <form id="signUpForm" style="display: none;">
+                    <div class="input-group">
+                        <label for="signUpEmail">
+                            <img src="./images/email.png" alt="email icon">
+                        </label>
+                        <input type="email" id="signUpEmail" name="email" placeholder="Email Address" required>
+                        <span class="checkmark">&#10003;</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="signUpPassword">
+                            <img src="./images/lock.png" alt="password icon">
+                        </label>
+                        <input type="password" id="signUpPassword" name="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="continue-btn">Sign Up</button>
+                </form>
+                <div class="or-continue" >
+                    <span class="line"></span> 
+                    Or Continue With
+                <span class="line"></span>
+                </div>
                 <div class="social-buttons">
-                    <button class="social-btn google"><img src="./images/google.png" alt="google logo" width="20" height="20"></button>
-                    <button class="social-btn apple"><img src="./images/apple-logo.png" alt="apple logo" width="20" height="20"></button>
-                    <button class="social-btn facebook"><img src="./images/facebook.png" alt="facebook logo" width="20" height="20"></button>
+                    <button class="social-btn google"><img src="./images/google.png" alt="google image-section" height="20px" width="20px"></button>
+                    <button class="social-btn apple"><img src="./images/apple-logo.png" alt="image-section" height="20px" width="20px"></button>
+                    <button class="social-btn facebook"><img src="./images/facebook.png" alt="image-section" height="20px" width="20px"></button>
                 </div>
             </div>
             <p class="footer-text">
@@ -48,5 +66,6 @@
             <img src="./images/logo.jpg" alt="Safe Icon">
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
